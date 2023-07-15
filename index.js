@@ -5,4 +5,8 @@ fs.readFile('./first.txt', 'utf-8')
   .catch(err => console.log(err));
 
 fs.writeFile('second.txt', 'I love NodeJS');
- 
+
+fs.readFile('./second.txt', 'utf-8')
+  .then(res => console.log(res))
+  .catch(err => console.log(err));
+  
